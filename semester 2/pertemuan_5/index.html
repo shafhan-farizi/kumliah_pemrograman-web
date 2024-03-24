@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Bunga Pinjaman Sederhana</title>
+</head>
+<body>
+    
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css?v=d0f72cd
+"/>
+<link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Inter" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/defaultV2.css?v=d0f72cd
+"/>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/64012b8864323209265bec99.css?v=3.3.52628&themeRevisionID=65cc87cf6163330c83a920b6"/>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.52628" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.52628" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: left;
+      
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="operation/tampilkan_bunga.php" method="post" accept-charset="utf-8" autocomplete="on">
+  <div id="formCoverLogo" style="margin-bottom:32px" class="form-cover-wrapper form-has-cover form-page-cover-image-align-center">
+    <div class="form-page-cover-image-wrapper" style="max-width:752px"><img src="https://www.jotform.com/uploads/shafhanfa/form_files/kanna-chan-removebg-preview%20(1).65fee9157bd610.55106056.png" class="form-page-cover-image" width="140" aria-label="Form Logo" style="aspect-ratio:140/143" /></div>
+  </div>
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">Hitung Jumlah Bunga Pinjaman</h1>
+            <div id="subHeader_1" class="form-subHeader">menghitung jumlah bunga yang harus dibayarkan ketika meminjam uang </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_58"><label class="form-label form-label-left form-label-auto" id="label_58" for="input_58" aria-hidden="false"> Jumlah Uang Dipinjam </label>
+        <div id="cid_58" class="form-input" data-layout="half"> <input type="number" id="input_58" name="jumlahUang" data-type="input-textbox" class="form-textbox validate[Numeric]" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_58"/> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_59"><label class="form-label form-label-left form-label-auto" id="label_59" for="input_59" aria-hidden="false"> Suku Bunga Per Tahun </label>
+        <div id="cid_59" class="form-input" data-layout="half"> <input type="number" id="input_59" name="sukuBunga" data-type="input-textbox" class="form-textbox validate[Numeric]" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_59" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_60"><label class="form-label form-label-left form-label-auto" id="label_60" for="input_60" aria-hidden="false"> Jangka Waktu </label>
+        <div id="cid_60" class="form-input" data-layout="half"> <input type="number" id="input_60" name="jangkaWaktu" data-type="input-textbox" class="form-textbox validate[Numeric]" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_60" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_73">
+        <div id="cid_73" class="form-input-wide"> <select class="form-dropdown" id="input_73" name="bulanOrTahun" data-component="dropdown"> <option disabled selected>Please Select</option> <option value="bulan">Bulan</option> <option value="tahun">Tahun</option> </select> </div> </li>
+      <li class="form-line" data-type="control_button" id="id_61">
+        <div id="cid_61" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_61" type="submit" class="form-submit-button form-submit-button-gradient-24 submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</form>
+</body>
+</html>
