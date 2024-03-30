@@ -1,8 +1,10 @@
 <?php
-include_once 'operation/koneksi.php';
+require_once 'operation/koneksi.php';
 
 $query = 'select * from bandara';
 $result = $conn->query($query);
+
+$i = 0;
 
 ?>
 <!DOCTYPE html>
@@ -94,7 +96,7 @@ $result = $conn->query($query);
         <table style="width: 100%;" id="myTable" class="stripe">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>No</th>
                     <th>Nama</th>
                     <th>Kategori</th>
                     <th>Kelas</th>
@@ -105,7 +107,7 @@ $result = $conn->query($query);
             <tbody>
                 <?php while($row = $result->fetch_assoc()): ?>
                 <tr>
-                    <td><?= $row['id'] ?></td>
+                    <td><?= ++$i ?></td>
                     <td><?= $row['nama'] ?></td>
                     <td><?= $row['kategori'] ?></td>
                     <td><?= $row['kelas'] ?></td>
@@ -124,7 +126,6 @@ $result = $conn->query($query);
             Tambah Data
         </div>
     </div>
-    <br>
     <div class="modal hide" id="modal">
         <h1>Form Tambah Data</h1>
         <div class="modal-body">
