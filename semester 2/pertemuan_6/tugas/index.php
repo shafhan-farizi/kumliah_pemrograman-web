@@ -160,11 +160,14 @@ $i = 0;
         let modal = document.getElementById('modal');
         tambah_data.addEventListener('click', () => {
             modal.classList.remove('hide');
+            document.body.style.overflowY = 'hidden'
+            document.documentElement.scrollTop = '0';
         })
-
+        
         modal.addEventListener('click', (e) => {
             if(e.target.classList.contains('modal')) {
                 modal.classList.add('hide');
+                document.body.style.overflowY = 'visible'
             }
         })
     </script>
